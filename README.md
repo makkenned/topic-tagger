@@ -19,7 +19,18 @@ Then on master
 bash setup_master.sh
 ```
 
-For manually starting a datanode
+To start the cluster
+```
+start-yarn.sh
+start-dfs.sh
+```
+
+To manually starting a datanode
 ```
 hadoop-daemon.sh start datanode
+```
+
+To inspect running services
+```
+jps
 ```
