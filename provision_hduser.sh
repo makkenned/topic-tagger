@@ -74,3 +74,6 @@ EOT
 
 # Format the namenode
 hdfs namenode -format
+
+# hadoop permissions
+chmod -R 777 /usr/local/hadoop
