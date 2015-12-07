@@ -14,6 +14,7 @@ su - hduser
 ssh localhost
 # the password is 12341234
 exit
+cd /tmp/topic-tagger
 bash provision_hduser.sh
 exit
 start-yarn.sh
