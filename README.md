@@ -12,6 +12,9 @@ cd topic-tagger
 bash provision.sh
 su - hduser
 ssh localhost
-# exit from ssh
+exit
 bash provision_hduser.sh
+exit
+/usr/local/hadoop/sbin/start-all.sh
+/usr/local/hadoop/sbin/stop-all.sh
 ```
