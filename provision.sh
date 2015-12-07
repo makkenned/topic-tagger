@@ -2,7 +2,6 @@
 
 # add each host to the hosts files
 cat <<EOT >> /etc/hosts
-158.85.193.242 host1 host1.mids.com
 158.85.193.253 host2 host2.mids.com
 158.85.193.229 host3 host3.mids.com
 158.85.193.252 host4 host4.mids.com
