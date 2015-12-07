@@ -40,3 +40,9 @@ curl http://apache.claz.org/hadoop/core/hadoop-2.7.1/hadoop-2.7.1.tar.gz | tar -
 chown -R hduser.hduser /data
 chown -R hduser.hduser /usr/local/hadoop
 
+# spark install
+curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+yum install -y sbt
+curl http://d3kbcqa49mib13.cloudfront.net/spark-1.5.0-bin-hadoop2.6.tgz | tar -zx -C /usr/local --show-transformed --transform='s,/*[^/]*,spark,'
+echo export SPARK_HOME=\"/usr/local/spark\" >> /root/.bash_profile
+source /root/.bash_profile
