@@ -15,3 +15,4 @@ host8
 host9
 EOT
 
+hdfs namenode -format
