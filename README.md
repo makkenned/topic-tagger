@@ -35,7 +35,9 @@ start-dfs.sh
 ###3. Some useful scripts
 
 HDFS report
+```
 hdfs dfsadmin -report
+```
 
 
 To manually starting a datanode
