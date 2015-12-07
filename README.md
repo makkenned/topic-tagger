@@ -12,6 +12,7 @@ cd topic-tagger
 bash provision.sh
 su - hduser
 ssh localhost
+# the password is 12341234
 exit
 bash provision_hduser.sh
 exit
