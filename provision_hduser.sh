@@ -23,7 +23,7 @@ cat <<EOT >core-site.xml
 <configuration>
   <property>
     <name>fs.defaultFS</name>
-    <value>hdfs://host1/</value>
+    <value>hdfs://host2/</value>
   </property>
 </configuration>
 EOT
@@ -33,7 +33,7 @@ cat <<EOT >yarn-site.xml
 <configuration>
   <property>
     <name>yarn.resourcemanager.hostname</name>
-    <value>host1</value>
+    <value>host2</value>
   </property>
   <property>
     <name>yarn.nodemanager.aux-services</name>
