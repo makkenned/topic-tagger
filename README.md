@@ -1,8 +1,7 @@
-# topic-tagger
-topic tagger
+Topic tagger
 
 
-# Instructions to configure a node. Whenever a password it's required, use 13241234.
+Instructions to configure a node. Whenever a password it's required, use 13241234.
 
 ```
 yum install -y git
@@ -13,5 +12,9 @@ bash provision.sh
 su - hduser
 cd /tmp/topic-tagger
 bash provision_hduser.sh
+```
+
+Then on master
+```
 bash setup_master.sh
 ```
