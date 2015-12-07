@@ -69,6 +69,11 @@ cat <<EOT >hdfs-site.xml
       <name>dfs.namenode.checkpoint.dir</name>
       <value>file:///data/namesecondary</value>
   </property>
+  
+  <property>
+    <name>dfs.replication</name>
+    <value>2</value>
+  </property>
 </configuration>
 EOT
 
