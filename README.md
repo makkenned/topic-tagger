@@ -15,6 +15,9 @@ ssh localhost
 exit
 bash provision_hduser.sh
 exit
-/usr/local/hadoop/sbin/start-all.sh
-/usr/local/hadoop/sbin/stop-all.sh
+cd /usr/local/hadoop/etc/hadoop
+start-yarn.sh
+start-dfs.sh
+stop-yarn.sh
+stop-dfs.sh
 ```
