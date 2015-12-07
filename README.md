@@ -1,7 +1,7 @@
-Topic tagger
+#Topic tagger#
 
 
-##Configuration
+##Configuration of the VS
 
 
 This assumes a cluster of 8 nodes. The hostnames are defined in the `provision` files. If more clusters want to be added, the only change you need is to update the hostnames in both files.
