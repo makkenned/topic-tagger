@@ -41,6 +41,3 @@ curl http://apache.claz.org/hadoop/core/hadoop-2.7.1/hadoop-2.7.1.tar.gz | tar -
 chown -R hduser.hduser /data
 chown -R hduser.hduser /usr/local/hadoop
 
-# create an SSH key for this user
-ssh-keygen -t rsa -P "" -f /root/.ssh/id_rsa
-cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
