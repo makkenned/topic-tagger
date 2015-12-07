@@ -17,6 +17,6 @@ bash provision_hduser.sh
 exit
 start-yarn.sh
 start-dfs.sh
-stop-yarn.sh
 stop-dfs.sh
+stop-yarn.sh
 ```
