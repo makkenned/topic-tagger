@@ -18,3 +18,8 @@ Then on master
 ```
 bash setup_master.sh
 ```
+
+For manually starting a datanode
+```
+hadoop-daemon.sh start datanode
+```
