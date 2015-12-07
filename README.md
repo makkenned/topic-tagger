@@ -32,6 +32,12 @@ start-yarn.sh
 start-dfs.sh
 ```
 
+Using root
+
+```
+bash  setup_master_spark.sh
+```
+
 ###3. Some useful scripts
 
 HDFS report
