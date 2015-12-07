@@ -32,7 +32,7 @@ yum install -y rsync net-tools java-1.8.0-openjdk-devel http://pkgs.repoforge.or
 # create a hadoop user with sudo permissions for ease
 adduser hduser
 
-adduser hduser sudo
+echo 'hduser ALL=(ALL:ALL) ALL' >> /etc/sudoers
 
 echo "12341234" | passwd hduser --stdin
 
