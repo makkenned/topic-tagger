@@ -45,13 +45,17 @@ HDFS report
 hdfs dfsadmin -report
 ```
 
-
 To manually starting a datanode
 ```
 hadoop-daemon.sh start datanode
 ```
 
-To inspect running services
+To inspect running HDFS services
 ```
 jps
+```
+
+To start spark on master
+```
+/usr/local/spark/sbin/start-all.sh
 ```
