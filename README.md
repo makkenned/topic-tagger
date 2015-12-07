@@ -18,8 +18,8 @@ cd /tmp/topic-tagger
 bash provision_hduser.sh
 exit
 cd /usr/local/hadoop/sbin/
-start-yarn.sh
-start-dfs.sh
-stop-dfs.sh
-stop-yarn.sh
+./start-yarn.sh
+./start-dfs.sh
+./stop-dfs.sh
+./stop-yarn.sh
 ```
