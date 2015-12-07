@@ -15,7 +15,6 @@ ssh localhost
 exit
 bash provision_hduser.sh
 exit
-cd /usr/local/hadoop/etc/hadoop
 start-yarn.sh
 start-dfs.sh
 stop-yarn.sh
