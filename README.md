@@ -1,6 +1,6 @@
 #Topic tagger#
 
-For the configuration of the machines, read the bottom of this file.
+For the configuration of the machines, read the bottom of this file. In short, a cluster of 8 nodes was created, all of them HDFS datanodes so that data is more spread. It's assumed that master is called host2.
 
 ##About the data
 
@@ -9,6 +9,17 @@ I used the latest avaiable XML Wikipedia dump available under the directory [htt
 I used [https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2](https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2).
 
 This file contains the dump of all the pages along with their contents. It is 11.6 GB compressed and 52GB uncompressed. It took around 2 hours to download the big file.
+
+## Pre-process
+
+A huge file is not easy to work with, thus we use xml_split to create an xml file for each page.
+
+### Installation of xml_split
+```
+wget ftp://ftp.muug.mb.ca/mirror/centos/7.1.1503/os/x86_64/Packages/perl-XML-Twig-3.44-2.el7.noarch.rpm
+yum install perl-XML-Twig-3.44-2.el7.noarch.rpm
+
+```
 
 ##Configuration of the VSs
 
@@ -48,7 +59,8 @@ bash  setup_master_spark.sh
 ```
 
 At this point hdfs has a folder /root that can be accessed by root, who can use Spark. hduser can use Spark as well.
-###3. Some useful scripts
+
+###3. Some useful commands/scripts
 
 HDFS report
 ```
