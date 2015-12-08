@@ -59,3 +59,9 @@ To start spark on master
 ```
 /usr/local/spark/sbin/start-all.sh
 ```
+
+To execute spark-submit usind hduser
+```
+SPARK_HOME=/usr/local/spark
+$SPARK_HOME/bin/spark-submit --class "SimpleApp" --master spark://host2:7077 $(find target -iname "*.jar")
+```
