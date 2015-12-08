@@ -38,6 +38,7 @@ Using root
 bash  setup_master_spark.sh
 ```
 
+At this point hdfs has a folder /root that can be accessed by root, who can use Spark. hduser can use Spark as well.
 ###3. Some useful scripts
 
 HDFS report
