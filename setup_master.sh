@@ -19,3 +19,5 @@ hdfs namenode -format
 
 hdfs dfs -mkdir /root
 hdfs dfs -chown -R root /root
+
+yum install -y bzip2
