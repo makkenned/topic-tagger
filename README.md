@@ -1,5 +1,10 @@
 #Topic tagger#
 
+For the configuration of the machines, read the bottom of this file.
+
+##About the data
+
+I used the latest avaiable XML Wikipedia dump available under the directory [https://dumps.wikimedia.org/backup-index.html](https://dumps.wikimedia.org/backup-index.html). I used [https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2](https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2).
 
 ##Configuration of the VS
 
