@@ -4,9 +4,13 @@ For the configuration of the machines, read the bottom of this file.
 
 ##About the data
 
-I used the latest avaiable XML Wikipedia dump available under the directory [https://dumps.wikimedia.org/backup-index.html](https://dumps.wikimedia.org/backup-index.html). I used [https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2](https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2).
+I used the latest avaiable XML Wikipedia dump available under the directory [https://dumps.wikimedia.org/backup-index.html](https://dumps.wikimedia.org/backup-index.html).
 
-##Configuration of the VS
+I used [https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2](https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2).
+
+This file contains the dump of all the pages along with their contents. It is 11.6 GB compressed and 52GB uncompressed.
+
+##Configuration of the VSs
 
 
 This assumes a cluster of 8 nodes. The hostnames are defined in the `provision` files. If more clusters want to be added, the only change you need is to update the hostnames in both files.
