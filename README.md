@@ -21,6 +21,15 @@ yum install perl-XML-Twig-3.44-2.el7.noarch.rpm
 
 ```
 
+### Split
+
+In a large disk, I executed
+
+```
+bunzip enwiki-20151102-pages-articles.xml.bz2
+xml_split enwiki-20140203-pages-articles.xml
+```
+
 ##Configuration of the VSs
 
 
