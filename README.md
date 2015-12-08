@@ -65,3 +65,8 @@ To execute spark-submit usind hduser
 SPARK_HOME=/usr/local/spark
 $SPARK_HOME/bin/spark-submit --class "SimpleApp" --master spark://host2:7077 $(find target -iname "*.jar")
 ```
+
+Add Scala support for Vim
+```
+mkdir -p ~/.vim/{ftdetect,indent,syntax} && for d in ftdetect indent syntax ; do wget -O ~/.vim/$d/scala.vim https://raw.githubusercontent.com/derekwyatt/vim-scala/master/$d/scala.vim; done
+```
