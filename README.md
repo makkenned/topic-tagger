@@ -8,7 +8,7 @@ I used the latest avaiable XML Wikipedia dump available under the directory [htt
 
 I used [https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2](https://dumps.wikimedia.org/enwiki/20151102/enwiki-20151102-pages-articles.xml.bz2).
 
-This file contains the dump of all the pages along with their contents. It is 11.6 GB compressed and 52GB uncompressed.
+This file contains the dump of all the pages along with their contents. It is 11.6 GB compressed and 52GB uncompressed. It took around 2 hours to download the big file.
 
 ##Configuration of the VSs
 
