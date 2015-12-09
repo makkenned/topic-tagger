@@ -1,6 +1,6 @@
 #Topic tagger#
 
-For the configuration of the machines, read the bottom of this file. In short, a cluster of 8 nodes was created, all of them HDFS datanodes so that data is more spread. It's assumed that master is called host2.
+For the configuration of the machines, read the bottom of this file. In short, a cluster of several nodes was created, all of them HDFS datanodes so that data is more spread. The master was called h1.
 
 ##About the data
 
