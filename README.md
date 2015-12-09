@@ -56,8 +56,7 @@ bash provision_hduser.sh
 Using hduser
 
 ```
-bash setup_master.sh
-hdfs namenode -format
+bash setup_master_hduser.sh
 start-yarn.sh
 start-dfs.sh
 ```
