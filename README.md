@@ -64,6 +64,7 @@ start-dfs.sh
 Using root
 
 ```
+source /root/.bash_profile
 bash  setup_master_spark.sh
 ```
 
