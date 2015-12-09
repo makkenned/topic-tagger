@@ -76,6 +76,3 @@ cat <<EOT >hdfs-site.xml
   </property>
 </configuration>
 EOT
-
-# Format the namenode
-hdfs namenode -format
