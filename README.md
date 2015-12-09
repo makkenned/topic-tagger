@@ -41,7 +41,7 @@ This assumes a cluster of 8 nodes. The hostnames are defined in the `provision` 
 Whenever a password it's required, use 13241234.
 
 ```
-yum install -y git
+yum install -y git vim
 cd /tmp
 git clone https://github.com/a20012251/topic-tagger.git
 cd topic-tagger
