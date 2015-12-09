@@ -19,4 +19,5 @@ hdfs namenode -format
 
 hdfs dfs -mkdir /root
 hdfs dfs -chown -R root /root
+hdfs namenode -format
 
