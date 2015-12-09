@@ -6,7 +6,7 @@ This repo includes the instructions to set up the cluster for spark. This is nod
 
 The folder `nb` contains the spark algorithm.
 
-For the configuration of the machines, read the bottom of this file. In short, a cluster of several nodes was created, all of them HDFS datanodes so that data is more spread. The master was called h1.
+For the configuration of the machines, read the bottom of this file. In short, a cluster of several nodes was created, all of them HDFS datanodes. The master is called h1.
 
 ##About the data
 
@@ -18,7 +18,7 @@ This file contains the dump of all the pages along with their contents. It is 11
 
 ## Pre-process
 
-A huge file is not easy to work with, thus we use xml_split to create an xml file for each page.
+A huge file is not easy to work with, thus we use xml_split to create an xml file for each page. This is needed because Spark will process each line of each file independently, thus each page must be described in a single line.
 
 ### Installation of xml_split
 ```
