@@ -2,16 +2,12 @@
 
 # add each host to the hosts files
 cat <<EOT >> /etc/hosts
-158.85.193.253 host2 host2.mids.com
 158.85.193.229 host3 host3.mids.com
 158.85.193.252 host4 host4.mids.com
-158.85.193.254 host5 host5.mids.com
-158.85.193.231 host6 host6.mids.com
-158.85.193.232 host7 host7.mids.com
-158.85.193.240 host8 host8.mids.com
-158.85.193.239 host9 host9.mids.com
 169.54.140.186 h2 h2.mids.com
 169.54.140.185 h1 h1.mids.com
+169.54.140.164 h3 h3.mids.com
+169.54.140.165 h4 h4.mids.com
 EOT
 
 # format the secondary disk that will be used by hdfs
