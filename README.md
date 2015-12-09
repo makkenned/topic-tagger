@@ -1,4 +1,10 @@
-#Topic tagger#
+#Wikipedia pages clustering#
+
+This project aims to cluster millions of wikipedia pages using LDA on Spark.
+
+This repo includes the instructions to set up the cluster for spark. This is node very easily. Adding more nodes is also very easy.
+
+The folder `nb` contains the spark algorithm.
 
 For the configuration of the machines, read the bottom of this file. In short, a cluster of several nodes was created, all of them HDFS datanodes so that data is more spread. The master was called h1.
 
