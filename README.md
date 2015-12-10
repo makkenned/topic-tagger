@@ -8,6 +8,28 @@ The folder `nb` contains the spark algorithm.
 
 For the configuration of the machines, read the bottom of this file. In short, a cluster of several nodes was created, all of them HDFS datanodes. The master is called h1.
 
+Process:
+
+- Download compressed XML Wikipedia dump
+- Uncompress the dump data
+- Split the huge xml file into 12 million of different pages, each page in a different file.
+- Convert each xml file into a single-line file. Sparks requires this format. `parse_file` does this.
+- Move these files to hdfs:///root/wiki/pages
+- Execute the spark application
+
+The output contains a list of inffered topics along with the most relevant words for each of them. Like this
+
+```
+TOPIC:
+player	0.004859839691254771
+english	0.004601964695540358
+author	0.0033215327384382358
+actor	0.0032786054156276395
+into	0.0030445904741979724
+university	0.002864692588770148
+actress	0.0027492395599874554
+```
+
 ##About the data
 
 I used the latest avaiable XML Wikipedia dump available under the directory [https://dumps.wikimedia.org/backup-index.html](https://dumps.wikimedia.org/backup-index.html).
